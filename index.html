@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poli-IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="window-controls">
+        <button id="minimize-button">➖</button>
+        <button id="close-button">❌</button>
+    </div>
+    
+    <div class="img_polivirtual">
+        <!-- <img src="D:\ChatBot\assets\Icon-Chatbot.ico"> -->
+    </div>
+
+    <div id="main-container">
+        <h2>🤖 Poli-IA</h2>
+
+        <!-- 🔹 Contenedor del chat -->
+        <div id="chat-container" class="chat-container"></div>
+
+        <!-- 🔹 Input para enviar mensajes -->
+        <div id="input-container">
+            <input type="text" id="input" placeholder="Escribe un mensaje..." autocomplete="off">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+
+    <!-- 🔹 Cargar renderer.js correctamente con defer -->
+    <script src="renderer.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+{
+    "preguntas_respuestas": [
+        {
+            "pregunta": "¿Dónde está el área de certificados?",
+            "respuesta": "El área de certificados está en el edificio administrativo, tercer piso, oficina 305."
+        },
+        {
+            "pregunta": "¿Cómo puedo obtener un certificado académico?",
+            "respuesta": "Puedes solicitarlo en la plataforma en línea o acudir al área de certificados."
+        },
+        {
+            "pregunta": "Informacion del área de certificados",
+            "respuesta": "Ubicacion: Edificio administrativo, tercer piso, oficina 305. Horario: Lunes a viernes de 8:00 AM a 4:00 PM."
+        }
+    ],
+
+
+
+
+
+
+
+
+
+
+    
+    "informacion_profunda": {
+        "certificados": {
+            "ubicacion": "Edificio administrativo, tercer piso, oficina 305.",
+            "horario": "Lunes a viernes de 8:00 AM a 4:00 PM.",
+            "tramites": {
+                "certificado_academico": "Solicitar en la plataforma en línea o acudir al área de certificados.",
+                "certificado_egreso": "Enviar un correo a certificados@universidad.edu con tus datos completos."
+            }
+        },
+        "matricula": {
+            "ubicacion": "Oficina de atención al estudiante, primer piso del edificio principal.",
+            "contacto": "atencion@universidad.edu",
+            "procedimiento": "Acudir a la oficina con tu documento de identidad o enviar un correo con tu caso detallado."
+        }
+    }
+}

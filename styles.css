@@ -1,0 +1,136 @@
+.img_polivirtual {
+  position: absolute; /* Cambia a posición absoluta */
+  top: 0; /* Coloca el elemento en la parte superior */
+  left: 0; /* Coloca el elemento en el lado izquierdo */
+  width: 100%; /* Ancho completo */
+  height: auto; /* Ajusta la altura automáticamente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#main-container {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #333;
+}
+
+.img_polivirtual img {
+  width: 20%;
+  height: auto;
+  display: flex;
+}
+
+.chat-container {
+  width: 100%;
+  height: 400px;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #4caf50;
+  color: white;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: #e0e0e0;
+  color: #333;
+  align-self: flex-start;
+}
+
+#input-container {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+#input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  outline: none;
+}
+
+#send-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #1976d2;
+}
+
+#window-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  width: 100%;
+  height: 30px;
+  -webkit-app-region: drag; /* Permite arrastrar la ventana */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2); /* Fondo en blanco para que no se vea degradado */
+}
+
+#minimize-button,
+#close-button {
+  -webkit-app-region: no-drag; /* 🔹 Evita que los botones sean arrastrables */
+}
+
+/* #window-controls button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+} */
+
+/* #window-controls button:hover {
+    color: red;
+} */
